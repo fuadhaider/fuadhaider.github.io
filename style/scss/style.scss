@@ -250,6 +250,19 @@ nav {
   color: $font-colour-2;
   text-align: center;
   font-size: 10px;
+
+    a {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+      text-decoration: none;
+      img {
+        width: 100%;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+    }
 }
 
 #looksbe-section-2 {
@@ -386,6 +399,11 @@ table {
     left: 5px;
     font-size: 10px;
   }
+}
+
+#samurai-bet-logo {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 #interest-section-1{
@@ -665,6 +683,19 @@ table {
      background-image:
      url('../../images/rocks.png'),
      url('../../images/backdrop_seabed_wide.png');
+   }
+   #looksbe-section-1 {
+     a {
+       display: inline-block;
+       width: 30%;
+       margin: 10px;
+       padding: 10px;
+     img {
+         width: 60%;
+         border-radius: 10%;
+         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+       }
+     }
    }
    #achievement-section, #travel-section-1 {
      height: 520px;
