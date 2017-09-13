@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Responsiveness meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fuad ">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fuad Haider Portfolio</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <!-- Logo -->
+      <div id="logo-div" >
+        <a href="index.html" >
+          <img src="images/hf_logo.png"
+          alt="Haider Logo">
+        </a>
+      </div>
+      <!-- middle menu -->
+      <div id="menu-div" class="menu-div">
+        <a href="#peofile"
+        onclick="autoScrollTo('profile-section-1',0);">Profile</a>
+        <a href="#project"
+        onclick="autoScrollTo('project-section-2', 50);">Projects</a>
+        <a href="#skillset"
+        onclick="autoScrollTo('skillset-section', 50);">Skillset</a>
+        <a href="#education"
+        onclick="autoScrollTo('education-section', 50);">Education</a>
+        <a href="#achievement"
+        onclick="autoScrollTo('achievement-section', 50);">Achievements</a>
+        <a href="#experience"
+        onclick="autoScrollTo('experience-section', 50);">Experiences</a>
+        <a href="#interest"
+        onclick="autoScrollTo('interest-section-1', 0);">Interests</a>
+        <a href="#contact"
+        onclick="autoScrollTo('contact-section', 0);">Contact</a>
+      </div>
+      <!-- menu icon -->
+      <div id="hamburger-div">
+        <a href="#hamburger" onclick="dropMenu()">&#9776;</a>
+      </div>
+    </nav>
+    <!-- static scroll indicator -->
+    <img id="scroll-icon"
+    src="images/scroll_icon.gif"
+    alt="Scroll Icon">
+
+    <section id="home-section-1" class="background-fixed">
+    </section>
+    <section id="home-section-2">
+      <h1>Fuad Haider</h1>
+      <p>Front End Developer</p>
+    </section>
+
+    <section id="profile-section-1" class="background-fixed">
+    </section>
+    <section id="profile-section-2">
+      <i class="material-icons">person</i>
+      <h1>Profile</h1>
+      <p>I am a self-motivated and result driven individual who is seeking
+        a new challenge in web development. Having keen interest in web
+        technology, I’ve been making websites and apps along with completing
+        related courses. My diverse and transferrable skills gained from
+        previous work experience in online, retail and training will fast track
+        me to fit into this sector. Committed to self-betterment, I will
+        continue to learn, progress and add value in a dynamic company.</p>
+    </section>
+
+    <section id="project-section-1" class="background-fixed">
+      <img src="images/Submarine.png"
+      alt="submarine">
+    </section>
+    <section id="project-section-2">
+      <i class="material-icons">build</i>
+      <h1>Projects</h1>
+      <div class="project-gallery">
+        <a href="pages/swipemarine.html">
+          <img src="images/Swipemarine_thumbnail.jpg"
+          alt="Swipemarine">
+        </a>
+        <p>SwipeMarine</p>
+      </div>
+      <div class="project-gallery">
+        <a href="pages/looksbe.html">
+          <img src="images/looksbe.png"
+          alt="looksbe">
+        </a>
+        <p>looksbe</p>
+      </div>
+      <!-- <div class="project-gallery">
+        <a href="pages/helping.html">
+          <img src="images/helping.png"
+          alt="Helping">
+        </a>
+        <p>helping</p>
+      </div>
+      <div class="project-gallery">
+        <a href="pages/quip.html">
+          <img src="images/Quip_thumbnail.jpeg"
+          alt="Quip">
+        </a>
+        <p>Quip</p>
+      </div> -->
+      <p style="visibility:hidden">bottom</p>
+    </section>
+
+    <section id="skillset-section">
+      <i class="fa fa-magic"></i>
+      <h1>Skillset</h1>
+      <h3>Computer Skills</h3>
+      <img src="images/html5.png"
+      alt="HTML5">
+      <img src="images/css3.png"
+      alt="CSS3">
+      <img src="images/sass.png"
+      alt="Sass">
+      <img src="images/js.png"
+      alt="JS">
+      <img src="images/jquery_logo.png"
+      alt="jQuery">
+      <img src="images/php.png"
+      alt="PHP">
+      <img src="images/mysql.png"
+      alt="MySQL">
+      <img src="images/mamp.png"
+      alt="MAMP">
+      <img src="images/drupal_logo.png"
+      alt="Drupal">
+      <img src="images/just_in_mind_logo.png"
+      alt="Just In mind">
+      <img src="images/c_sharp.png"
+      alt="C#">
+      <img src="images/unity_logo.png"
+      alt="Unity">
+      <img src="images/github_logo.png"
+      alt="GitHub">
+      <img src="images/illustrator_logo.png"
+      alt="Photoshop">
+      <img src="images/photoshop_logo.png"
+      alt="Illustrator">
+      <img src="images/gimp.png"
+      alt="Gimp">
+      <img src="images/msoffice_logo.png"
+      alt="MS Office"><br><br>
+      <table>
+        <tr>
+          <td>
+            <h3>Business Skills</h3><br>
+            <p>Management</p>
+            <p>Marketing &amp Sales</p>
+            <p>Training &amp Mentoring</p>
+            <p>Presentation</p>
+            <p>Customer Service</p>
+          </td>
+          <td>
+            <h3>Soft Skills</h3><br>
+            <p>Creativity</p>
+            <p>Attention to Detail</p>
+            <p>Multitasking</p>
+            <p>Team Work</p>
+            <p>Proactive</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="education-section">
+      <i class="fa fa-mortar-board"></i>
+      <h1>Education</h1>
+      <table class="table-border">
+        <tr>
+          <td style="width:15%">
+            <a href="https://www.thetrainingroom.com/" target="_blank">
+              <img
+              src="images/thetrainingroom_logo.png"
+              alt="The Training Room">
+            </a>
+          </td>
+          <td>
+            <p><b>QCF Level 3 Web Development Certification</b>, 2017</p>
+            <p>The Training Room</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.uel.ac.uk/" target="_blank">
+              <img
+              src="images/uel_logo.png"
+              alt="UEL">
+            </a>
+          </td>
+          <td>
+            <p><b>Master of Business Administration</b>, 2007</p>
+            <p>University of East London</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.northsouth.edu/" target="_blank">
+              <img
+              src="images/nsu_logo.png"
+              alt="NSU">
+            </a>
+          </td>
+          <td>
+            <p><b>BSc in Computer Science</b>, 2005</p>
+            <p>North South University</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="achievement-section">
+      <!-- 2 parallax images in divs -->
+      <div id="achievement-image-1"></div>
+      <div id="achievement-image-2"></div>
+      <div id="achievement-div">
+        <i class="fa fa-trophy"></i>
+        <h1 style="text-align:center">Achievements</h1>
+        <ul>
+          <li>Migrating from senior business career to technical profession and
+          creating websites and mobile apps single-handedly from inception to
+          publication along with quick completion of web course.</li>
+          <li>Enlarged market share, increased turnover by up to 17% and gross
+          profit by up to 31%.</li>
+          <li>Improved customer satisfaction, resulting in 0 customer complaints
+          and achieved 100% score in all mystery customer visits.</li>
+          <li>Coordinated training of over 120 employees, mentored over 10
+          employees, inspired demotivated employees resulting in reduced
+          employee turnover by 30%.</li>
+          <li>Reduced cost by up to 12% in trading, staffing and merchandising.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience-section">
+      <i class="material-icons">work</i>
+      <h1>Experiences</h1>
+      <table class="table-border">
+        <tr>
+          <td style="width:20%">
+            <img src="images/Samurai_Bet_Logo.png"
+            alt="Samurai Bet Logo">
+            <p>Samurai Bet</p>
+          </td>
+          <td>
+            <p><b>Operations Consultant</b> - June 2016 to April 2017</p>
+            <p>Provided Sportsbook expertise on design, content and feature of
+              the website and app in the build-up to the service.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.williamhillplc.com/" target="_blank">
+              <img src="images/William_Hill_logo.png"
+              alt="William Hill Logo">
+            </a>
+            <p>William Hill</p>
+          </td>
+          <td>
+            <p><b>Licensed Betting Office Manager</b> - April 2007 to June 2016</p>
+            <p>In charge of the overall affairs of betting offices to achieve
+            business goals.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.williamhillplc.com/" target="_blank">
+              <img
+              src="images/William_Hill_logo.png"
+              alt="William Hill Logo">
+            </a>
+            <p>William Hill</p>
+          </td>
+          <td>
+            <p><b>District Training Coordinator</b> - May 2014 to July 2015</p>
+            <p>Provided training support to 120+ employees; coordinated training
+            process between Retail Division and Training Academy.</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="interest-section-1">
+      <div id="car">
+        <img id="car-image"
+        src="images/wraith.jpg"
+        alt="Rolls Royce Wraith">
+      </div>
+      <div id="suits">
+        <img id="suits-image"
+        src="images/suits_mobile.jpeg"
+        alt="Suits">
+      </div>
+      <div id="tennis">
+        <img id="djokovic"
+        src="images/djokovic.jpeg"
+        alt="Djokovic">
+      </div>
+      <div id="sketch">
+        <img id="sketch-image"
+        src="images/sketch.jpg"
+        alt="Sketch">
+      </div>
+    </section>
+    <section id="interest-section-2">
+      <p id="heart">&#9829;</p>
+      <h1>interests</h1>
+      <p>I have interests in luxury cars, good clothes, Tennis and free hand
+        sketch.</p>
+      <p>I like to explore the spectrum of culture, history and urbanisation
+        by travelling from historical places to modern cities.</p><br>
+      <p>Click below to explore by travel gallery</p><br>
+      <a href="pages/travel.html">
+      <img src="images/explore_button.png"
+      alt="Explore button">
+    </a>
+    </section>
+
+    <section id="contact-section">
+      <p id="telephone">&#9742;</p>
+      <h1>Contact</h1><br>
+      <div class="contact-thumbnails">
+        <a href="tel:07538639038">
+          <i class="fa fa-phone"></i>
+        </a>
+        <p>+44(0)7889857161</p>
+      </div>
+      <div class="contact-thumbnails">
+        <!-- <a href="server/email.php"> -->
+        <a href="mailto:mohaiderfuad@gmail.com">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <p>mohaiderfuad@gmail.com</p>
+      </div>
+      <div class="contact-thumbnails">
+        <a href="skype:haiderfuad?callto" target="_top">
+          <i class="fa fa-skype"></i>
+        </a>
+        <p>haiderfuad</p>
+      </div>
+      <div class="contact-thumbnails">
+        <a href="https://www.linkedin.com/in/haiderfuad/" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <p>linkedin.com/in/haiderfuad</p>
+      </div>
+      <div class="contact-thumbnails">
+        <a href="https://github.com/fuadhaider/fuad-haider-portfolio"
+        target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <p>fuadhaider</p>
+      </div><br><br>
+      <p style="text-align:center">Made by Fuad Haider</p>
+    </section>
+    <script src="behaviour/script.js"></script>
+  </body>
+</html>

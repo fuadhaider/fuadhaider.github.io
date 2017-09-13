@@ -1,0 +1,599 @@
+/*Fuad Haider Web CV*/
+/*web font from google*/
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+/*Making default margin and padding to zero*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Titillium Web font for all contents, sans serif for backup*/
+body {
+  font-family: "Titillium Web", sans-serif; }
+
+/*Nav tag will hold logo, menues, and icon*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5; }
+
+/*hf logo*/
+#logo-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 12%;
+  height: 35px;
+  /*Image of logo hf*/ }
+  #logo-div img {
+    height: 80%;
+    padding: 5% 0; }
+  #logo-div img:hover {
+    background-color: #ddd; }
+
+/*Middle postion on Nav*/
+.menu-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 80%;
+  height: 35px;
+  /*Display no menu content by default*/ }
+  .menu-div a {
+    display: none; }
+
+/*Menu dropdown on click hamburger icon*/
+.menu-div.menu-drop {
+  display: inline;
+  width: 80%;
+  height: auto;
+  /*Contents on dropdown menu*/ }
+  .menu-div.menu-drop a {
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: "Titillium Web", sans-serif; }
+  .menu-div.menu-drop a:hover {
+    background-color: #ddd;
+    color: #143566; }
+
+/*Hamburger menu div for smaller screen*/
+#hamburger-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 8%;
+  height: 35px;
+  /*Hambuger menu icon*/ }
+  #hamburger-div a {
+    color: white;
+    padding: 0 1%;
+    text-decoration: none;
+    font-size: 23px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  #hamburger-div a:hover {
+    background-color: #ddd;
+    color: #143566; }
+
+#back-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 8%;
+  height: 35px;
+  text-align: center; }
+  #back-div a {
+    text-decoration: none;
+    padding: 15% 0; }
+    #back-div a span {
+      color: white;
+      font-size: 23px; }
+    #back-div a span:hover {
+      background-color: #ddd;
+      color: #143566; }
+
+/*Scroll gif image*/
+#scroll-icon {
+  display: block;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 10%;
+  z-index: 5; }
+
+/*Background image fixed for not scrolling*/
+.background-fixed {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/*Home page*/
+#home-section-1 {
+  background-image: url("../../images/hfshard_mobile.png");
+  height: 300px; }
+
+/*Bottom bar on home page*/
+#home-section-2 {
+  background-color: #36393d;
+  padding: 5%;
+  color: white;
+  text-align: center;
+  font-size: 10px; }
+
+#profile-section-1 {
+  background-image: url("../../images/hfshard_mobile.png");
+  filter: blur(3px);
+  height: 200px; }
+
+#profile-section-2 {
+  position: relative;
+  background-color: #36393d;
+  color: white;
+  font-size: 10px;
+  padding: 5%;
+  text-align: center;
+  /*Responsive logo based on browser size*/ }
+  #profile-section-2 i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px; }
+
+/*animated undersea background and rocks moving in different speed*/
+#project-section-1 {
+  height: 200px;
+  background-image: url("../../images/rocks_small.png"), url("../../images/backdrop_seabed_small.png");
+  background-repeat: repeat-x, repeat-x;
+  animation: animate-background linear 50s infinite;
+  /*Aligning submaire image horizontally by margin and vertically by translateY*/ }
+  #project-section-1 img {
+    position: relative;
+    display: block;
+    width: 40%;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%); }
+
+@keyframes animate-background {
+  from {
+    background-position: 0px 0px, 0px 0px; }
+  to {
+    background-position: -3000px 0px, -1995px 0px; } }
+#project-section-2 {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px; }
+  #project-section-2 i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px; }
+
+.project-gallery {
+  display: block;
+  float: left;
+  width: 50%; }
+  .project-gallery img {
+    width: 50%;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+
+/*Thumbnails for Swipemarine, looksbe, helping and Quip pages*/
+.thumbnail {
+  margin: 5%;
+  float: left;
+  width: 40%; }
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10%; }
+
+#swipemarine-section-1 {
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px;
+  background-image: url("../../images/Submarine_blur.png"); }
+  #swipemarine-section-1 img {
+    width: 20%; }
+
+#swipemarine-section-2 {
+  background-color: #36393d;
+  background-image: url("../../images/Submarine_blur.png");
+  padding-top: 50px; }
+
+#looksbe-section-1 {
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px; }
+
+#looksbe-section-2 {
+  background-color: #36393d;
+  padding-top: 50px; }
+
+#quip-section-1 {
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px;
+  background-image: url("../../images/quip_logo.png"); }
+
+#quip-section-2 {
+  background-color: #36393d;
+  background-image: url("../../images/quip_logo.png");
+  padding-top: 50px; }
+
+#skillset-section {
+  position: relative;
+  background-color: #36393d;
+  padding: 10%;
+  color: white;
+  text-align: center;
+  font-size: 10px; }
+  #skillset-section i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px; }
+  #skillset-section img {
+    width: 15%;
+    margin: 10px;
+    vertical-align: middle; }
+
+#education-section {
+  position: relative;
+  background-color: white;
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px; }
+  #education-section i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px; }
+
+table {
+  width: 100%; }
+
+.table-border {
+  border-spacing: 10px; }
+  .table-border td {
+    border-collapse: separate;
+    background-color: #fcd8c7;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; }
+    .table-border td img {
+      width: 50%; }
+
+#achievement-section {
+  position: relative;
+  height: 300px;
+  overflow: hidden; }
+
+#achievement-image-1 {
+  position: absolute;
+  bottom: 0;
+  background-image: url("../../images/tokyo_skyline_mobile_dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px; }
+
+#achievement-image-2 {
+  position: absolute;
+  bottom: 0;
+  background-image: url("../../images/highrise_window_mobile_dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px; }
+
+#achievement-div {
+  position: relative;
+  padding: 10%;
+  color: white;
+  text-align: left;
+  font-size: 10px; }
+  #achievement-div i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px; }
+  #achievement-div i, #achievement-div h1, #achievement-div li {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 1px black; }
+
+#experience-section {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px; }
+  #experience-section i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px; }
+
+#interest-section-1 {
+  position: relative;
+  height: 200px;
+  overflow: hidden; }
+
+#car {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+
+#car-image {
+  position: absolute;
+  left: 0;
+  height: 100%; }
+
+#suits {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+
+#suits-image {
+  position: absolute;
+  top: 0;
+  height: 200%; }
+
+#tennis {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+
+#djokovic {
+  position: absolute;
+  right: 0;
+  height: 100%; }
+
+#sketch {
+  position: absolute;
+  top: 0px;
+  left: 75%;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+
+#sketch-image {
+  position: absolute;
+  bottom: 0;
+  height: 150%; }
+
+#interest-section-2 {
+  position: relative;
+  background-color: white;
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px; }
+  #interest-section-2 img {
+    width: 30%; }
+
+#heart {
+  position: absolute;
+  top: 5px;
+  left: 5px; }
+
+#travel-section-1 {
+  position: relative;
+  height: 300px;
+  overflow: hidden; }
+  #travel-section-1 #travel-image-1 {
+    position: absolute;
+    bottom: 0;
+    background-image: url("../../images/himalaya_mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px; }
+  #travel-section-1 #travel-image-2 {
+    position: absolute;
+    bottom: 0;
+    background-image: url("../../images/man_mountain_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px; }
+  #travel-section-1 #travel-div {
+    padding: 10%;
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+    color: white; }
+    #travel-section-1 #travel-div h1, #travel-section-1 #travel-div p {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 1px black; }
+
+#travel-section-2 {
+  background-color: #36393d;
+  padding-top: 50px;
+  font-size: 10px; }
+
+.thumbnail-travelling {
+  margin: 1%;
+  float: left;
+  width: 23%; }
+
+.thumbnail-travelling img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%; }
+
+.thumbnail-travelling p {
+  height: 45px;
+  text-align: center;
+  color: white; }
+
+#contact-section {
+  position: relative;
+  background-color: #36393d;
+  padding: 10% 5%;
+  color: white;
+  text-align: center;
+  font-size: 10px; }
+  #contact-section i {
+    font-size: 30px; }
+  #contact-section i:hover {
+    background-color: #ddd;
+    color: #143566; }
+
+#telephone {
+  position: absolute;
+  top: 5px;
+  left: 5px; }
+
+.contact-thumbnails {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  padding: 10px; }
+  .contact-thumbnails a {
+    text-decoration: none; }
+    .contact-thumbnails a i {
+      color: white;
+      text-decoration: none; }
+  .contact-thumbnails p {
+    color: white;
+    text-align: center; }
+
+#email-section-1 {
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px;
+  background-image: url("../../images/email_background_blur.png"); }
+
+#email-section-2 {
+  background-color: #36393d;
+  background-image: url("../../images/email_background_blur.png");
+  padding-top: 50px;
+  text-align: center;
+  color: white; }
+  #email-section-2 input, #email-section-2 textarea {
+    width: 50%;
+    padding: 1%;
+    border-radius: 10px; }
+
+#email-section-2 a {
+  color: white; }
+#email-section-2 input {
+  width: 50%; }
+#email-section-2 button {
+  width: 20%;
+  height: 20px; }
+
+/*Bigger font size for bigger screen*/
+@media screen and (min-width: 600px) {
+  #home-section-2, #profile-section-2, #project-section-2, #skillset-section,
+  #education-section, #achievement-div, #experience-section, #interest-section-2,
+  #contact-section, #swipemarine-section-1, #looksbe-section-1, #quip-section-1,
+  #travelling-section-2, #travel-section-1 #travel-div, #travel-section-2,
+  #email-section-1 {
+    font-size: 20px; }
+    #home-section-2 i, #profile-section-2 i, #project-section-2 i, #skillset-section i,
+    #education-section i, #achievement-div i, #experience-section i, #interest-section-2 i,
+    #contact-section i, #swipemarine-section-1 i, #looksbe-section-1 i, #quip-section-1 i,
+    #travelling-section-2 i, #travel-section-1 #travel-div i, #travel-section-2 i,
+    #email-section-1 i {
+      font-size: 30px; }
+
+  #logo-div {
+    height: 48px; }
+    #logo-div img {
+      height: 100%;
+      padding: 0; }
+
+  .menu-div {
+    height: 48px; }
+
+  .menu-div.menu-drop a {
+    font-size: 17px; }
+
+  #hamburger-div {
+    height: 48px; }
+    #hamburger-div a {
+      font-size: 32px; }
+
+  #back-div {
+    height: 48px; }
+    #back-div a span {
+      font-size: 32px; }
+
+  /*Bigger images for bigger screen*/
+  #home-section-1, #profile-section-1 {
+    height: 500px;
+    background-image: url("../../images/hfshard.png");
+    /*background-image: url('images/hfshard.png');*/ }
+
+  #project-section-1 {
+    height: 500px;
+    background-image: url("../../images/rocks.png"), url("../../images/backdrop_seabed_wide.png"); }
+
+  #achievement-section, #travel-section-1 {
+    height: 520px; }
+
+  #achievement-image-1 {
+    height: 670px;
+    background-image: url("../../images/tokyo_skyline_dark.png"); }
+
+  #achievement-image-2 {
+    height: 670px;
+    background-image: url("../../images/highrise_window_dark.png"); }
+
+  #travel-section-1 #travel-image-1 {
+    height: 550px;
+    background-image: url("../../images/himalaya.jpg"); }
+  #travel-section-1 #travel-image-2 {
+    height: 550px;
+    background-image: url("../../images/man_mountain.png"); }
+
+  #interest-section-1 {
+    height: 300px; }
+
+  #contact-section i {
+    font-size: 50px; } }
+/*For biggest screen*/
+@media screen and (min-width: 1000px) {
+  /*Hamburger icon will not show for bigger screen*/
+  #hamburger-div a {
+    display: none; }
+
+  /*Menu contents will show on bigger screen*/
+  .menu-div a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-family: "Titillium Web", sans-serif; } }
+
+/*# sourceMappingURL=style.css.map */
