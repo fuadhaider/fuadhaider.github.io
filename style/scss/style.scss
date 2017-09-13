@@ -741,13 +741,19 @@ table {
     }
   }
   /*Menu contents will show on bigger screen*/
-  .menu-div a {
-    float: left;
-    display: block;
-    color: $font-colour-1;
-    text-align: center;
-    padding: 11px 16px;
-    text-decoration: none;
-    font-family: $body-font;
+  .menu-div {
+    a {
+      float: left;
+      display: block;
+      color: $font-colour-1;
+      text-align: center;
+      padding: 11px 16px;
+      text-decoration: none;
+      font-family: $body-font;
+    }
+    a:hover {
+      background-color: $highlight-colour;
+      color: $font-colour-2;
+    }
   }
 }

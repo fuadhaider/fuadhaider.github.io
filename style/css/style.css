@@ -618,6 +618,9 @@ table {
     text-align: center;
     padding: 11px 16px;
     text-decoration: none;
-    font-family: "Titillium Web", sans-serif; } }
+    font-family: "Titillium Web", sans-serif; }
+  .menu-div a:hover {
+    background-color: #ddd;
+    color: #143566; } }
 
 /*# sourceMappingURL=style.css.map */
