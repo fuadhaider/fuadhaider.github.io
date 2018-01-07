@@ -214,17 +214,27 @@ nav {
 }
 
 /*Thumbnails for Swipemarine, looksbe, helping and Quip pages*/
-.thumbnail {
-  margin: 5%;
-  float: left;
-  width: 40%;
-  img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 10%;
+.thumbnail-gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5%;
+  padding: 5%;
+  justify-content: center;
+
+  .thumbnail {
+    a {
+      text-decoration: none;
+      img {
+        width: 100%;
+      }
+      p {
+        color: $font-colour-1;
+        text-align: center;
+      }
+    }
   }
 }
+
 
 #swipemarine-section-1 {
   padding: 10%;
@@ -242,9 +252,7 @@ nav {
   background-color: $frame-colour-1;
   background-image:
   url('../../images/Submarine_blur.png');
-  padding-top: 50px;
 }
-
 #looksbe-section-1 {
   padding: 10%;
   color: $font-colour-2;
@@ -268,35 +276,23 @@ nav {
 #looksbe-section-2 {
   background-color: $frame-colour-1;
   padding-top: 50px;
-  div {
-    text-align: center;
-
-    a {
-      img {
-        width: 90%;
-      }
-    }
-    p {
-      color: $font-colour-1;
-    }
-  }
 }
+// 
+// #quip-section-1 {
+//   padding: 10%;
+//   color: $font-colour-2;
+//   text-align: center;
+//   font-size: 10px;
+//   background-image:
+//   url('../../images/quip_logo.png');
+// }
 
-#quip-section-1 {
-  padding: 10%;
-  color: $font-colour-2;
-  text-align: center;
-  font-size: 10px;
-  background-image:
-  url('../../images/quip_logo.png');
-}
-
-#quip-section-2 {
-  background-color: $frame-colour-1;
-  background-image:
-  url('../../images/quip_logo.png');
-  padding-top: 50px;
-}
+// #quip-section-2 {
+//   background-color: $frame-colour-1;
+//   background-image:
+//   url('../../images/quip_logo.png');
+//   padding-top: 50px;
+// }
 
 #skillset-section {
   position: relative;
@@ -507,6 +503,17 @@ table {
   left: 5px;
 }
 
+#travel-section-0 {
+  height: 250px;
+  h1 {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: $font-colour-1;
+  }
+}
+
 #travel-section-1 {
   position: relative;
   height: 300px;
@@ -649,7 +656,7 @@ table {
   #home-section-2, #profile-section-2, #project-section-2, #skillset-section,
   #education-section, #achievement-div, #experience-section, #interest-section-2,
   #contact-section, #swipemarine-section-1, #looksbe-section-1, #quip-section-1,
-  #travelling-section-2, #travel-section-1 #travel-div, #travel-section-2,
+  #travel-section-1 #travel-div, #travel-section-2,
   #email-section-1 {
      font-size: 20px;
      i {
@@ -691,7 +698,6 @@ table {
      height: 500px;
      background-image:
        url('../../images/hfshard.png');
-     /*background-image: url('images/hfshard.png');*/
    }
    #project-section-1 {
      height: 500px;
@@ -699,30 +705,29 @@ table {
      url('../../images/rocks.png'),
      url('../../images/backdrop_seabed_wide.png');
    }
+   #swipemarine-section-2 {
+     div {
+       grid-template-columns: auto auto auto;
+     }
+   }
    #looksbe-section-1 {
      a {
        display: inline-block;
        width: 30%;
        margin: 10px;
        padding: 10px;
-     img {
+       img {
          width: 60%;
          border-radius: 10%;
          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
        }
-     }
+     }     
    }
    #looksbe-section-2 {
      div {
-       a {
-         img {
-           width: 25%;
-         }
-       }
-       p {
-         
-       }
+       grid-template-columns: auto auto auto;
      }
+     
    }
    #skillset-section {
      a {
@@ -745,6 +750,11 @@ table {
      background-image:
      url('../../images/highrise_window_dark.png');
    }
+   #travel-section-0 {
+     h1 {
+       font-size: 30px;
+     }
+   }
    #travel-section-1 {
      #travel-image-1 {
        height: 550px;
@@ -757,6 +767,11 @@ table {
        url('../../images/man_mountain.png');
      }
    }
+   #travel-section-2 {
+     .thumbnail-gallery {
+       grid-template-columns: auto auto auto;
+     }
+   }
    #interest-section-1 {
      height: 300px;
    }
@@ -766,7 +781,6 @@ table {
      }
    }
 }
-
 /*For biggest screen*/
 @media screen and (min-width: 1000px) {
   /*Hamburger icon will not show for bigger screen*/
