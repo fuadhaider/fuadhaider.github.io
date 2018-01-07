@@ -299,11 +299,14 @@ nav {
     left: 5px;
     font-size: 10px;
   }
-  img {
-    width: 15%;
-    margin: 10px;
-    vertical-align: middle;
+  a {
+    img {
+      width: 35%;
+      margin: 10px;
+      vertical-align: middle;
+    }
   }
+  
 }
 
 #education-section {
@@ -696,6 +699,14 @@ table {
          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
        }
      }
+   }
+   #skillset-section {
+     a {
+       img {
+         width: 15%;
+       }
+     }
+    
    }
    #achievement-section, #travel-section-1 {
      height: 520px;

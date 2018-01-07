@@ -254,8 +254,8 @@ nav {
     top: 5px;
     left: 5px;
     font-size: 10px; }
-  #skillset-section img {
-    width: 15%;
+  #skillset-section a img {
+    width: 35%;
     margin: 10px;
     vertical-align: middle; }
 
@@ -580,6 +580,9 @@ table {
       width: 60%;
       border-radius: 10%;
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+
+  #skillset-section a img {
+    width: 15%; }
 
   #achievement-section, #travel-section-1 {
     height: 520px; }
