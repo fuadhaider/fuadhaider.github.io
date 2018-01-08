@@ -104,9 +104,24 @@ nav {
   z-index: 5; }
 
 /*Background image fixed for not scrolling*/
+.container {
+  height: 100vh; }
+
+.fixed-img {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; }
+
+#img1 {
+  background-image: url("../../images/hfshard_mobile.png"); }
+
 .background-fixed {
   background-size: cover;
-  background-attachment: fixed;
+  position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -5; }
@@ -149,20 +164,31 @@ nav {
     left: 5px;
     font-size: 10px; }
 
+#img2 {
+  background-image: url("../../images/hfshard_mobile.png");
+  filter: blur(3px); }
+
 /*animated undersea background and rocks moving in different speed*/
 #project-section-1 {
-  height: 200px;
-  background-image: url("../../images/rocks_small.png"), url("../../images/backdrop_seabed_small.png");
-  background-repeat: repeat-x, repeat-x;
-  animation: animate-background linear 50s infinite;
+  height: 50vh;
   /*Aligning submaire image horizontally by margin and vertically by translateY*/ }
+  #project-section-1 #project-div-1 {
+    background-image: url("../../images/rocks_small.png"), url("../../images/backdrop_seabed_small.png");
+    background-repeat: repeat-x, repeat-x;
+    animation: animate-background linear 50s infinite;
+    height: 100%;
+    width: 100%; }
   #project-section-1 img {
     position: relative;
-    display: block;
     width: 40%;
     margin: auto;
-    top: 50%;
-    transform: translateY(-50%); }
+    top: -50%;
+    z-index: 5; }
+
+#img3 {
+  background-image: url("../../images/rocks_small.png"), url("../../images/backdrop_seabed_small.png");
+  background-repeat: repeat-x, repeat-x;
+  animation: animate-background linear 50s infinite; }
 
 @keyframes animate-background {
   from {
