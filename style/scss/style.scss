@@ -122,12 +122,17 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -5
 }
 /*Home page*/
 #home-section-1 {
-  background-image:
-  url('../../images/hfshard_mobile.png');
-  height: 300px;
+  height: 40vh;
+  #home-div-1 {
+    background-image:
+    url('../../images/hfshard_mobile.png');
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /*Bottom bar on home page*/
@@ -140,10 +145,14 @@ nav {
 }
 
 #profile-section-1 {
-  background-image:
-  url('../../images/hfshard_mobile.png');
-  filter: blur(3px);
-  height: 200px;
+  height: 30vh;
+  #profile-div-1 {
+    background-image:
+    url('../../images/hfshard_mobile.png');
+    filter: blur(3px);
+    height: 100%;
+    width: 100%;
+  }
 }
 
 #profile-section-2 {
@@ -695,9 +704,11 @@ table {
    }
    /*Bigger images for bigger screen*/
    #home-section-1, #profile-section-1 {
-     height: 500px;
-     background-image:
-       url('../../images/hfshard.png');
+    //  height: 500px;
+     #home-div-1, #profile-div-1 {
+       background-image:
+         url('../../images/hfshard.png');
+     }
    }
    #project-section-1 {
      height: 500px;
