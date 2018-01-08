@@ -117,22 +117,19 @@ nav {
   z-index: 5;
 }
 /*Background image fixed for not scrolling*/
+
+
 .background-fixed {
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  // background-attachment: fixed;
+  background-position: top;
   background-repeat: no-repeat;
-  z-index: -5
 }
 /*Home page*/
 #home-section-1 {
-  height: 40vh;
-  #home-div-1 {
-    background-image:
-    url('../../images/hfshard_mobile.png');
-    height: 100%;
-    width: 100%;
-  }
+  background-image:
+  url('../../images/hfshard_mobile.png');
+  height: 300px;
 }
 
 /*Bottom bar on home page*/
@@ -145,14 +142,11 @@ nav {
 }
 
 #profile-section-1 {
-  height: 30vh;
-  #profile-div-1 {
-    background-image:
-    url('../../images/hfshard_mobile.png');
-    filter: blur(3px);
-    height: 100%;
-    width: 100%;
-  }
+  display: none;
+  // background-image:
+  // url('../../images/hfshard_mobile.png');
+  // filter: blur(3px);
+  height: 200px;
 }
 
 #profile-section-2 {
@@ -170,6 +164,7 @@ nav {
     font-size: 10px;
   }
 }
+
 
 /*animated undersea background and rocks moving in different speed*/
 #project-section-1 {
@@ -703,18 +698,29 @@ table {
      }
    }
    /*Bigger images for bigger screen*/
-   #home-section-1, #profile-section-1 {
-    //  height: 500px;
-     #home-div-1, #profile-div-1 {
+   #home-section-1 {
+     height: 500px;
+     background-image:
+       url('../../images/hfshard.png');
+   }
+   #profile-section-1 {
+       display: block;
+       height: 500px;
        background-image:
-         url('../../images/hfshard.png');
-     }
+         url('../../images/hfshard_blur.png');
+        //  filter: blur(3px);
+        // filter: grayscale(100%);
    }
    #project-section-1 {
      height: 500px;
      background-image:
      url('../../images/rocks.png'),
      url('../../images/backdrop_seabed_wide.png');
+   }
+   .background-fixed {
+     background-attachment: fixed;
+     background-position: center;
+
    }
    #swipemarine-section-2 {
      div {
