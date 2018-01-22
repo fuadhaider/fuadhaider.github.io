@@ -243,10 +243,12 @@ nav {
     top: 5px;
     left: 5px;
     font-size: 10px; }
-  #skillset-section a img {
-    width: 35%;
-    margin: 10px;
-    vertical-align: middle; }
+  #skillset-section a {
+    text-decoration: none; }
+    #skillset-section a img {
+      width: 35%;
+      margin: 10px;
+      vertical-align: middle; }
 
 #education-section {
   position: relative;
