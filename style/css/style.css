@@ -183,7 +183,8 @@ nav {
     border-radius: 10%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
 
-/*Thumbnails for Swipemarine, looksbe, helping and Quip pages*/
+/*Thumbnails for Swipemarine, looksbe, data table, D3, 
+helping and Quip pages*/
 .thumbnail-gallery {
   display: grid;
   grid-template-columns: auto auto;
@@ -193,7 +194,9 @@ nav {
   .thumbnail-gallery .thumbnail a {
     text-decoration: none; }
     .thumbnail-gallery .thumbnail a img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(222, 222, 222, 0.2); }
     .thumbnail-gallery .thumbnail a p {
       color: white;
       text-align: center; }
@@ -223,12 +226,55 @@ nav {
     padding: 10px;
     text-decoration: none; }
     #looksbe-section-1 a img {
-      width: 100%;
+      width: 50%;
       border-radius: 10%;
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
 
 #looksbe-section-2 {
   background-color: #36393d;
+  padding-top: 50px; }
+
+#data-table-section-1 {
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px;
+  background-image: url("../../images/data-table-transparent.png"); }
+  #data-table-section-1 a {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none; }
+    #data-table-section-1 a img {
+      width: 50%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+
+#data-table-section-2 {
+  background-color: #36393d;
+  background-image: url("../../images/data-table-transparent.png");
+  padding-top: 50px; }
+
+#d3-section-1 {
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px;
+  background-image: url("../../images/line-graph-transparent.png"); }
+  #d3-section-1 a {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px; }
+    #d3-section-1 a img {
+      width: 50%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+
+#d3-section-2 {
+  background-color: #36393d;
+  background-image: url("../../images/line-graph-transparent.png");
   padding-top: 50px; }
 
 #skillset-section {
@@ -527,15 +573,19 @@ table {
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
   #home-section-2, #profile-section-2, #project-section-2, #skillset-section,
-  #education-section, #achievement-div, #experience-section, #interest-section-2,
+  #education-section, #achievement-div, #experience-section,
+  #interest-section-2,
   #contact-section, #swipemarine-section-1, #looksbe-section-1, #quip-section-1,
-  #travel-section-1 #travel-div, #travel-section-2,
+  #travel-section-1 #travel-div, #travel-section-2, #d3-section-1,
+  #data-table-section-1,
   #email-section-1 {
     font-size: 20px; }
     #home-section-2 i, #profile-section-2 i, #project-section-2 i, #skillset-section i,
-    #education-section i, #achievement-div i, #experience-section i, #interest-section-2 i,
+    #education-section i, #achievement-div i, #experience-section i,
+    #interest-section-2 i,
     #contact-section i, #swipemarine-section-1 i, #looksbe-section-1 i, #quip-section-1 i,
-    #travel-section-1 #travel-div i, #travel-section-2 i,
+    #travel-section-1 #travel-div i, #travel-section-2 i, #d3-section-1 i,
+    #data-table-section-1 i,
     #email-section-1 i {
       font-size: 30px; }
 
@@ -593,6 +643,12 @@ table {
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
 
   #looksbe-section-2 div {
+    grid-template-columns: auto auto auto; }
+
+  #d3-section-2 div {
+    grid-template-columns: auto auto auto; }
+
+  #data-table-section-2 div {
     grid-template-columns: auto auto auto; }
 
   #skillset-section a img {

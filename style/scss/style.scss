@@ -217,7 +217,8 @@ nav {
   }
 }
 
-/*Thumbnails for Swipemarine, looksbe, helping and Quip pages*/
+/*Thumbnails for Swipemarine, looksbe, data table, D3, 
+helping and Quip pages*/
 .thumbnail-gallery {
   display: grid;
   grid-template-columns: auto auto;
@@ -230,6 +231,8 @@ nav {
       text-decoration: none;
       img {
         width: 100%;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px rgba(222, 222, 222, 0.2);
       }
       p {
         color: $font-colour-1;
@@ -249,6 +252,8 @@ nav {
   url('../../images/Submarine_blur.png');
   img {
     width: 20%;
+    // border-radius: 10%;
+    // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -270,7 +275,7 @@ nav {
       padding: 10px;
       text-decoration: none;
       img {
-        width: 100%;
+        width: 50%;
         border-radius: 10%;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
       }
@@ -281,20 +286,79 @@ nav {
   background-color: $frame-colour-1;
   padding-top: 50px;
 }
-// 
+#data-table-section-1 {
+  padding: 10%;
+  color: $font-colour-2;
+  text-align: center;
+  font-size: 10px;
+  background-image:
+  url('../../images/data-table-transparent.png');
+  a {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    img {
+      width: 50%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+#data-table-section-2 {
+  background-color: $frame-colour-1;
+  background-image:
+  url('../../images/data-table-transparent.png');
+  padding-top: 50px;
+}
+
+
+#d3-section-1 {
+  padding: 10%;
+  color: $font-colour-2;
+  text-align: center;
+  font-size: 10px;
+  background-image:
+  url('../../images/line-graph-transparent.png');
+  a {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    img {
+      width: 50%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+#d3-section-2 {
+  background-color: $frame-colour-1;
+  background-image:
+  url('../../images/line-graph-transparent.png');
+  padding-top: 50px;
+}
+
+
 // #quip-section-1 {
 //   padding: 10%;
 //   color: $font-colour-2;
 //   text-align: center;
 //   font-size: 10px;
 //   background-image:
-//   url('../../images/quip_logo.png');
+//   url('../../images/quip-logo.png');
+//   img {
+//     width: 20%;
+//   }
 // }
-
+// 
 // #quip-section-2 {
 //   background-color: $frame-colour-1;
 //   background-image:
-//   url('../../images/quip_logo.png');
+//   url('../../images/quip-logo.png');
 //   padding-top: 50px;
 // }
 
@@ -659,9 +723,11 @@ table {
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
   #home-section-2, #profile-section-2, #project-section-2, #skillset-section,
-  #education-section, #achievement-div, #experience-section, #interest-section-2,
+  #education-section, #achievement-div, #experience-section, 
+  #interest-section-2,
   #contact-section, #swipemarine-section-1, #looksbe-section-1, #quip-section-1,
-  #travel-section-1 #travel-div, #travel-section-2,
+  #travel-section-1 #travel-div, #travel-section-2, #d3-section-1, 
+  #data-table-section-1,
   #email-section-1 {
      font-size: 20px;
      i {
@@ -744,16 +810,24 @@ table {
    #looksbe-section-2 {
      div {
        grid-template-columns: auto auto auto;
-     }
-     
+     }   
+   }
+   #d3-section-2 {
+     div {
+       grid-template-columns: auto auto auto;
+     }     
+   }
+   #data-table-section-2 {
+     div {
+       grid-template-columns: auto auto auto;
+     } 
    }
    #skillset-section {
      a {
        img {
          width: 15%;
        }
-     }
-    
+     }  
    }
    #achievement-section, #travel-section-1 {
      height: 520px;
