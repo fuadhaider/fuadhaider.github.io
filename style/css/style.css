@@ -40,6 +40,22 @@ nav {
   .menu-div a {
     display: none; }
 
+#back-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 8%;
+  height: 35px;
+  text-align: center; }
+  #back-div a {
+    text-decoration: none;
+    padding: 15% 0; }
+    #back-div a span {
+      color: white;
+      font-size: 23px; }
+    #back-div a span:hover {
+      background-color: #ddd;
+      color: #143566; }
+
 /*Menu dropdown on click hamburger icon*/
 .menu-div.menu-drop {
   display: inline;
@@ -77,22 +93,6 @@ nav {
   #hamburger-div a:hover {
     background-color: #ddd;
     color: #143566; }
-
-#back-div {
-  background-color: rgba(54, 57, 61, 0.9);
-  float: left;
-  width: 8%;
-  height: 35px;
-  text-align: center; }
-  #back-div a {
-    text-decoration: none;
-    padding: 15% 0; }
-    #back-div a span {
-      color: white;
-      font-size: 23px; }
-    #back-div a span:hover {
-      background-color: #ddd;
-      color: #143566; }
 
 /*Scroll gif image*/
 #scroll-icon {
@@ -239,7 +239,7 @@ helping and Quip pages*/
   color: #143566;
   text-align: center;
   font-size: 10px;
-  background-image: url("../../images/data-table-transparent.png"); }
+  background-image: url("../../images/data-table-transparent2.png"); }
   #data-table-section-1 a {
     display: inline-block;
     width: 30%;
@@ -254,27 +254,6 @@ helping and Quip pages*/
 #data-table-section-2 {
   background-color: #36393d;
   background-image: url("../../images/data-table-transparent.png");
-  padding-top: 50px; }
-
-#d3-section-1 {
-  padding: 10%;
-  color: #143566;
-  text-align: center;
-  font-size: 10px;
-  background-image: url("../../images/line-graph-transparent.png"); }
-  #d3-section-1 a {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    padding: 10px; }
-    #d3-section-1 a img {
-      width: 50%;
-      border-radius: 10%;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
-
-#d3-section-2 {
-  background-color: #36393d;
-  background-image: url("../../images/line-graph-transparent.png");
   padding-top: 50px; }
 
 #skillset-section {
@@ -573,20 +552,16 @@ table {
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
   #home-section-2, #profile-section-2, #project-section-2, #skillset-section,
-  #education-section, #achievement-div, #experience-section,
-  #interest-section-2,
-  #contact-section, #swipemarine-section-1, #looksbe-section-1, #quip-section-1,
-  #travel-section-1 #travel-div, #travel-section-2, #d3-section-1,
-  #data-table-section-1,
-  #email-section-1 {
+  #education-section, #achievement-div, #experience-section, #interest-section-2,
+  #contact-section, #swipemarine-section-1, #looksbe-section-1,
+  #travel-section-1 #travel-div, #travel-section-2,
+  #data-table-section-1, #email-section-1 {
     font-size: 20px; }
     #home-section-2 i, #profile-section-2 i, #project-section-2 i, #skillset-section i,
-    #education-section i, #achievement-div i, #experience-section i,
-    #interest-section-2 i,
-    #contact-section i, #swipemarine-section-1 i, #looksbe-section-1 i, #quip-section-1 i,
-    #travel-section-1 #travel-div i, #travel-section-2 i, #d3-section-1 i,
-    #data-table-section-1 i,
-    #email-section-1 i {
+    #education-section i, #achievement-div i, #experience-section i, #interest-section-2 i,
+    #contact-section i, #swipemarine-section-1 i, #looksbe-section-1 i,
+    #travel-section-1 #travel-div i, #travel-section-2 i,
+    #data-table-section-1 i, #email-section-1 i {
       font-size: 30px; }
 
   #logo-div {
@@ -643,9 +618,6 @@ table {
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
 
   #looksbe-section-2 div {
-    grid-template-columns: auto auto auto; }
-
-  #d3-section-2 div {
     grid-template-columns: auto auto auto; }
 
   #data-table-section-2 div {

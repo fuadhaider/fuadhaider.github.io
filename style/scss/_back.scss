@@ -1,0 +1,21 @@
+@import 'config';
+// back button to section of the previous page
+#back-div {
+  background-color: $nav-colour;
+  float: left;
+  width: 8%;
+  height: 35px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    padding: 15% 0;
+    span {
+      color: $font-colour-1;
+      font-size: 23px;
+    }
+    span:hover {
+      background-color: $highlight-colour;
+      color: $font-colour-2;
+    }
+  }
+}

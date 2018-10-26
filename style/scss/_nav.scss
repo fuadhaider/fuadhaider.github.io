@@ -1,0 +1,35 @@
+@import 'config';
+/*Nav tag will hold logo, menues, and icon*/
+nav {
+  position: fixed;
+  top: 0;
+  // left: 0;
+  width: 100%;
+  z-index: 5;
+}
+/*hf logo*/
+#logo-div {
+  background-color: $nav-colour;
+  float: left;
+  width: 12%;
+  height: 35px;
+  /*Image of logo hf*/
+  img {
+    height: 80%;
+    padding: 5% 0;
+  }
+  img:hover {
+    background-color: $highlight-colour;
+  }
+}
+/*Middle postion on Nav*/
+.menu-div {
+  background-color: $nav-colour;
+  float: left;
+  width: 80%;
+  height: 35px;
+  /*Display no menu content by default*/
+  a {
+    display: none;
+  }
+}

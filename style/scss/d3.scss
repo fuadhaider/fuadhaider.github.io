@@ -1,0 +1,67 @@
+// @import 'config';
+@import 'base';
+@import 'nav';
+@import 'back';
+@import 'thumb';
+
+#d3-section-1 {
+  padding: 10%;
+  color: $font-colour-2;
+  text-align: center;
+  font-size: 10px;
+  background-image:
+  url('../../images/line-graph-transparent.png');
+  a {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    img {
+      width: 50%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+#d3-section-2 {
+  background-color: $frame-colour-1;
+  background-image:
+  url('../../images/line-graph-transparent.png');
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  #d3-section-1 {
+    
+       font-size: 20px;
+       i {
+         font-size: 30px;
+       }
+     }
+     #logo-div {
+       height: 48px;
+       img {
+         height: 100%;
+         padding: 0;
+       }
+     
+  }
+  .menu-div {
+    height: 48px;
+
+  }
+  #back-div {
+    height: 48px;
+    a {
+      span {
+        font-size: 32px;
+      }
+    }
+  }
+  #d3-section-2 {
+    div {
+      grid-template-columns: auto auto auto;
+    }     
+  }
+}

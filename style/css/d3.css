@@ -1,0 +1,120 @@
+/*web font from google*/
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+/*Making default margin and padding to zero*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Titillium Web font for all contents, sans serif for backup*/
+body {
+  font-family: "Titillium Web", sans-serif; }
+
+/*Nav tag will hold logo, menues, and icon*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5; }
+
+/*hf logo*/
+#logo-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 12%;
+  height: 35px;
+  /*Image of logo hf*/ }
+  #logo-div img {
+    height: 80%;
+    padding: 5% 0; }
+  #logo-div img:hover {
+    background-color: #ddd; }
+
+/*Middle postion on Nav*/
+.menu-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 80%;
+  height: 35px;
+  /*Display no menu content by default*/ }
+  .menu-div a {
+    display: none; }
+
+#back-div {
+  background-color: rgba(54, 57, 61, 0.9);
+  float: left;
+  width: 8%;
+  height: 35px;
+  text-align: center; }
+  #back-div a {
+    text-decoration: none;
+    padding: 15% 0; }
+    #back-div a span {
+      color: white;
+      font-size: 23px; }
+    #back-div a span:hover {
+      background-color: #ddd;
+      color: #143566; }
+
+/*Thumbnails for Swipemarine, looksbe, data table, D3, 
+helping and Quip pages*/
+.thumbnail-gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5%;
+  padding: 5%;
+  justify-content: center; }
+  .thumbnail-gallery .thumbnail a {
+    text-decoration: none; }
+    .thumbnail-gallery .thumbnail a img {
+      width: 100%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(222, 222, 222, 0.2); }
+    .thumbnail-gallery .thumbnail a p {
+      color: white;
+      text-align: center; }
+
+#d3-section-1 {
+  padding: 10%;
+  color: #143566;
+  text-align: center;
+  font-size: 10px;
+  background-image: url("../../images/line-graph-transparent.png"); }
+  #d3-section-1 a {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px; }
+    #d3-section-1 a img {
+      width: 50%;
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+
+#d3-section-2 {
+  background-color: #36393d;
+  background-image: url("../../images/line-graph-transparent.png");
+  padding-top: 50px; }
+
+@media screen and (min-width: 600px) {
+  #d3-section-1 {
+    font-size: 20px; }
+    #d3-section-1 i {
+      font-size: 30px; }
+
+  #logo-div {
+    height: 48px; }
+    #logo-div img {
+      height: 100%;
+      padding: 0; }
+
+  .menu-div {
+    height: 48px; }
+
+  #back-div {
+    height: 48px; }
+    #back-div a span {
+      font-size: 32px; }
+
+  #d3-section-2 div {
+    grid-template-columns: auto auto auto; } }
+
+/*# sourceMappingURL=d3.css.map */

@@ -1,0 +1,25 @@
+@import 'config';
+/*Thumbnails for Swipemarine, looksbe, data table, D3, 
+helping and Quip pages*/
+.thumbnail-gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5%;
+  padding: 5%;
+  justify-content: center;
+
+  .thumbnail {
+    a {
+      text-decoration: none;
+      img {
+        width: 100%;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px rgba(222, 222, 222, 0.2);
+      }
+      p {
+        color: $font-colour-1;
+        text-align: center;
+      }
+    }
+  }
+}

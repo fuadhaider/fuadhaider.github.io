@@ -1,0 +1,12 @@
+/*web font from google*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import 'config';
+/*Making default margin and padding to zero*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Titillium Web font for all contents, sans serif for backup*/
+body {
+  font-family: $body-font;
+}
